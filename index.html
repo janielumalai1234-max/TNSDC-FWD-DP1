@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Janani | Portfolio</title>
+
+  <style>
+
+    /* General Styling */
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      margin: 0;
+
+      padding: 0;
+
+      line-height: 1.6;
+
+      scroll-behavior: smooth;
+
+      background: linear-gradient(to right, purple, pink);
+
+      color: white;
+
+    }
+
+    header {
+
+      background: rgba(0, 0, 0, 0.5);
+
+      padding: 15px 20px;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+    }
+
+    nav {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+    }
+
+    nav h1 {
+
+      font-size: 22px;
+
+    }
+
+    nav ul {
+
+      list-style: none;
+
+      display: flex;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    nav ul li {
+
+      margin-left: 20px;
+
+    }
+
+    nav ul li a {
+
+      color: white;
+
+      text-decoration: none;
+
+      transition: color 0.3s;
+
+    }
+
+    nav ul li a:hover {
+
+      color: #ffcc80;
+
+    }
+
+    .hero {
+
+      text-align: center;
+
+      padding: 120px 20px;
+
+    }
+
+    .hero h2 span {
+
+      color: #ffcc80;
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      margin-top: 20px;
+
+      padding: 10px 20px;
+
+      background: #ffcc80;
+
+      color: #333;
+
+      text-decoration: none;
+
+      border-radius: 5px;
+
+      font-weight: bold;
+
+      transition: background 0.3s;
+
+    }
+
+    .btn:hover {
+
+      background: #ffc107;
+
+    }
+
+    /* Section Styling */
+
+    section {
+
+      padding: 50px 20px;
+
+      text-align: center;
+
+    }
+
+    #skills ul, #hobbies ul {
+
+      list-style: none;
+
+      padding: 0;
+
+    }
+
+    #skills li, #hobbies li {
+
+      background: rgba(255, 255, 255, 0.2);
+
+      margin: 10px auto;
+
+      padding: 10px;
+
+      width: 200px;
+
+      border-radius: 8px;
+
+      font-weight: bold;
+
+      transition: transform 0.3s;
+
+    }
+
+    #skills li:hover, #hobbies li:hover {
+
+      transform: scale(1.05);
+
+      background: rgba(255, 255, 255, 0.4);
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      padding: 20px;
+
+      background: rgba(0, 0, 0, 0.5);
+
+      color: white;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header>
+
+    <nav>
+
+      <h1>Janani</h1>
+
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#hobbies">Hobbies</a></li>
+
+        <li><a href="#certificates">Certificates</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- Hero Section -->
+
+  <section id="home" class="hero">
+
+    <h2><span>E Janani</span></h2>
+
+    <p>B.SC CS</p>
+
+    <a href="#about" class="btn">Know More</a>
+
+  </section>
+
+  <!-- About Section -->
+
+  <section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+
+      I have done my schooling at st.joseph's girls higher secondary school in Arni.
+
+      I am currently pursuing my <strong>Bsc (Bachelor of Computer Science)</strong> 
+
+      in <strong>2nd year</strong> at <em>Arcot Sri Mahaalakshmi Women's College</em>.  
+
+      I’m passionate about learning new technologies and developing my coding skills.  
+
+    </p>
+
+  </section>
+
+  <!-- Skills Section -->
+
+  <section id="skills">
+
+    <h2>My Skills</h2>
+
+    <ul>
+
+      <li>Python</li>
+
+      <li>C++</li>
+
+      <li>Html</li>
+
+    </ul>
+
+  </section>
+
+  <!-- Hobbies Section -->
+
+  <section id="hobbies">
+
+    <h2>My Hobbies</h2>
+
+    <ul>
+
+      <li>Drawing 🎨</li>
+
+      <li>Book reading</li>
+
+      <li>Badminton 🏸</li>
+
+    </ul>
+
+  </section>
+
+  
+
+  <!-- Certicates Section -->
+
+  <section id="certificates">
+
+    <h2>My Certificates</h2>
+
+    <ul>
+
+      <li>Drawing certificate received through a Talent Exam</li>
+
+      <li>Edunet-Front End Web Development</li>
+
+    </ul>
+
+  </section>
+
+  <!-- Contact Section -->
+
+  <section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>Email: <a href="mailto:yourmail@example.com">janielumalai1234@gmail.com</a></p>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <p>&copy; 2025 Janani. All rights reserved.</p>
+
+  </footer>
+
+  <script>
+
+        // Smooth scroll for nav links
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+      anchor.addEventListener('click', function(e) {
+
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href'))
+
+          .scrollIntoView({ behavior: 'smooth' });
+
+      });
+
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+  alert("Welcome to E Janani’s Portfolio!");
+
+});
+
+    
+
+  </script>
+
+</body>
+
+</html>
